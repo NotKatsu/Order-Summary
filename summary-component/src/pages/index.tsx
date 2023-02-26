@@ -1,4 +1,4 @@
-import { Card, Spacer, Text, Image, Row, Grid } from '@nextui-org/react'
+import { Card, Spacer, Text, Image, Row, Grid, Link } from '@nextui-org/react'
 
 export default function Home() {
   return (
@@ -14,21 +14,22 @@ export default function Home() {
           <Text css={{ color: "#8A8DA7", fontSize: "15px", fontWeight: "600", marginLeft: "auto", marginRight: "auto" }}>audiobooks, and podcasts on any device</Text>
           <Text css={{ color: "#8A8DA7", fontSize: "15px", fontWeight: "600", marginLeft: "auto", marginRight: "auto" }}>anywhere you like!</Text>
           <Spacer y={0.5} />
-          <Card variant="flat" css={{ width: "80%", marginLeft: "auto", "marginRight": "auto", bg: "#F8F9FE" }}>
-            <Grid.Container gap={1}>
-              <Grid>
-                <img src="https://media.discordapp.net/attachments/1074339253246496779/1079431248193265734/icon-music.png" style={{ width: "45px", marginTop: "15px", marginBottom: "15px", marginLeft: "20px"  }} />
-              </Grid>
-              <Grid>
-                <Text css={{ color: "#1B2C4F", fontSize: "16px", fontWeight: "900", marginTop: "13px"}}>Annual Plan</Text>
-                <Text css={{ color: "#8A8DA7", fontSize: "15px", fontWeight: "600" }}>$59.99/year</Text>
-              </Grid>
-              <Grid>
-                <Text>Hello</Text>
-              </Grid>
-            </Grid.Container>
 
+          <Card variant="flat" css={{ width: "80%", marginLeft: "auto", "marginRight": "auto", bg: "#F8F9FE" }}>
+            <Row>
+              <Grid.Container gap={1}>
+                <Grid>
+                  <img src="https://media.discordapp.net/attachments/1074339253246496779/1079431248193265734/icon-music.png" style={{ width: "45px", marginTop: "15px", marginBottom: "15px", marginLeft: "20px"  }} />
+                </Grid>
+                <Grid>
+                  <Text css={{ color: "#1B2C4F", fontSize: "16px", fontWeight: "900", marginTop: "13px"}}>Annual Plan</Text>
+                  <Text css={{ color: "#8A8DA7", fontSize: "15px", fontWeight: "600" }}>$59.99/year</Text>
+                </Grid>          
+              </Grid.Container>
+              <Link underline css={{ color: "#624DF2", fontSize: "13px", fontWeight: "700", marginRight: "20px", marginTop: "auto", marginBottom: "auto" }}>Change</Link>
+            </Row>
           </Card>
+          <Spacer y={1} />
           <Spacer y={2} />
         </Card>
       </div>
