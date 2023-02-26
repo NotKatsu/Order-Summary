@@ -1,9 +1,9 @@
-import { Card, Spacer, Text, Image, Row, Grid, Link } from '@nextui-org/react'
+import { Card, Spacer, Text, Button, Row, Grid, Link } from '@nextui-org/react'
 
 export default function Home() {
   return (
     <>
-      <div style={{ minHeight: "70vh", display: "flex", justifyContent: "center", "alignItems": "center"}}>
+      <div style={{ minHeight: "100vh", display: "flex", justifyContent: "center", "alignItems": "center"}}>
         <Card css={{ bg: "$white", maxWidth: "380px", borderRadius: "15px" }}>
           <img src="https://cdn.discordapp.com/attachments/1074339253246496779/1079367294993584219/illustration-hero.png" />
 
@@ -30,6 +30,9 @@ export default function Home() {
             </Row>
           </Card>
           <Spacer y={1} />
+          <Button animated={false} css={{ bg: "#382AE1", width: "80%", marginLeft: "auto", marginRight: "auto", fontWeight: "700", fontSize: "13px", "&:hover": { bg: "#766CF1" } }}>Proceed to Payment</Button>
+          <Spacer y={1} />
+          <Link css={{ color: "#8A8DA7", fontSize: "13px", fontWeight: "700", marginLeft: "auto", marginRight: "auto", "&:hover": { color: "black" } }}>Cancel Order</Link>
           <Spacer y={2} />
         </Card>
       </div>
