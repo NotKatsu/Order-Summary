@@ -8,7 +8,7 @@ const darkTheme = createTheme({
         },
         colors: {
             white: "#FFFFFF",
-            black: "#D6E1FF",
+            black: "#E0E8FF",
 
             primary: "#FFFFFF"
         },
